@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PySpark Script",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/path-to-script/",
+            "args": ["/path-to-csv/"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYSPARK_PYTHON": "/path-to-pyspark/",
+                "SPARK_HOME": "/path-to-spark/"
+            }
+        }
+    ]
+}
